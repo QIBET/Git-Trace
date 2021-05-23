@@ -24,10 +24,6 @@ findProfile(){
    this.profile = profile;
  });
 
-/*  this.githubService.getProfileRepos().subscribe(repos => {
-
-   this.repos = repos;
- })  	*/
 }
 
 
