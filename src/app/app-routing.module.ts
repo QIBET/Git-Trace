@@ -4,8 +4,10 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 
 
 const routes: Routes = [
+  {path: 'home', component:NavbarComponent},
   { path: 'repo', component: NavbarComponent},
   { path: 'user', component: NavbarComponent},
+   { path: '', redirectTo:"/home", pathMatch:"full"},
 ];
 
 @NgModule({

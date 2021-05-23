@@ -10,13 +10,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FindrepoComponent } from './components/findrepo/findrepo.component';
 import { FinduserComponent } from './components/finduser/finduser.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     MyprofileComponent,
     NavbarComponent,
     FindrepoComponent,
-    FinduserComponent
+    FinduserComponent,
+    
   ],
   imports: [
     BrowserModule,
