@@ -12,7 +12,7 @@ import {User} from '../../classes/user'
 export class MyprofileComponent implements OnInit {
    profile!: any;
    repos!: any;
-   username!: string;
+   username!: "Qibet88";
 
   constructor(private githubService: GithubserviceService) { 
 
