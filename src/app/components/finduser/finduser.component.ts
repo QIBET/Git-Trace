@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubserviceService } from '../../services/githubservice.service';
+
 
 @Component({
   selector: 'app-finduser',
@@ -7,9 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinduserComponent implements OnInit {
 
-  constructor() { }
+profile!: any;
+/* repos!: any;
+ */username!: string;
 
-  ngOnInit(): void {
-  }
+constructor(private githubService: GithubserviceService) { 
 
 }
+
+findProfile(){
+ this.githubService.updateProfile(this.username);
+ this.githubService.getProfileInfo().subscribe(profile => {
+
+   this.profile = profile;
+ });
+
+/*  this.githubService.getProfileRepos().subscribe(repos => {
+
+   this.repos = repos;
+ })  	*/
+}
+
+
+
+ngOnInit(): void {
+}
+
+}
+
