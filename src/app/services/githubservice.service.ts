@@ -7,16 +7,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class GithubserviceService {
   private username:string;
-  private clientid = 'f3571d8e55e169540825';
-  private clientsecret = 'a6c2b7d8f7c691e771b1908873e1322028e097c4';
+  private clientid = '';
+  private clientsecret = '';
 
   constructor(private http:HttpClient) { 
-  	console.log("service is now ready!");
+  	
   	this.username = 'Qibet88';
   }
 
   getProfileInfo(){
-  	return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret);
+  	return this.http.get("https://api.github.com/users/" + this.username + "?client_i=" + this.clientid + "&client_secret=" + this.clientsecret);
   }
   
 
