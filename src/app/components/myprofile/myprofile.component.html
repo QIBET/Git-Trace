@@ -24,11 +24,11 @@
 							<li class="list-group-item" *ngIf="profile.email"><a href="emailto:{{profile.email}}">{{profile.email}}</a></li>
 						</ul>
 						<p>
-							<span class="badge bg-primary">{{profile.followers}} Followers</span>
+							<span class="badge rounded-pill bg-primary">{{profile.followers}} Followers</span>
 							<span class="label bg-warning">Following {{profile.following}}</span>
-							<span class="label bg-info">{{profile.public_gists}} Public gists</span>
+							<span class="label rounded-pill bg-info">{{profile.public_gists}} Public gists</span>
 							<span class="label bg-dark" style="color: white;">{{profile.public_repos}} Public Repos</span>
-						</p>
+						</p><br>
 						<p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile on github</a></p>
 					</div>
 					
