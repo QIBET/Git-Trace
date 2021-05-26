@@ -19,7 +19,8 @@ html
 Bootstrap
 CSS
 Angular CLi
-
+## Bugs
+There are no known bbugs but you can make contributions through the github link: https://qibet.github.io/Git-Trace/
 ## Support and contact details
 Incase of any bottlenecks or challenges, Kindly reach us on Email: bernardonline88@gmail.com 
 Github access link:
